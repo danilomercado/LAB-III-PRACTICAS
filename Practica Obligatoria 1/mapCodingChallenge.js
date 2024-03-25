@@ -148,7 +148,3 @@ const returnMovieTitle = (watchlist) => {
 const titlesArray = returnMovieTitle(watchList);
 console.log(titlesArray);
 
-
-
-// const toArray = (titlesArray) => {return Object.entries(titlesArray)};
-// console.log(toArray(titlesArray))
