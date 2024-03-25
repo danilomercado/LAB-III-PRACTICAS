@@ -130,11 +130,25 @@ let watchList = [
 	},
 ];
 
-// const returnMovieTitle = (watchlist) => {
 
-    // Aquí adentro escriban la función
-    
-// }
 
-// const titlesArray = returnMovieTitle(watchList);
-// console.log(titlesArray);
+
+const returnMovieTitle = (watchlist) => {
+
+	const movieNolan = watchList.filter((prop) => prop.Director === 'Christopher Nolan');
+
+	const imdbUpper = movieNolan.filter((prop) => prop.imdbRating > 8);
+
+	const movieTitle = imdbUpper.map((prop) => prop.Title);
+
+	const onlyTitles = movieTitle.map((title) => ({Title: title}))
+
+	return onlyTitles
+}
+const titlesArray = returnMovieTitle(watchList);
+console.log(titlesArray);
+
+
+
+// const toArray = (titlesArray) => {return Object.entries(titlesArray)};
+// console.log(toArray(titlesArray))
