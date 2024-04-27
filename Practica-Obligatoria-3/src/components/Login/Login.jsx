@@ -22,7 +22,7 @@ const Login = () => {
         type="button"
         id="button-addon2"
       >
-        Acceder
+        Login
       </button>
     </div>
   );
